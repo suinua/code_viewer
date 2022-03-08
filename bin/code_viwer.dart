@@ -5,8 +5,7 @@ import 'package:nyxx/nyxx.dart';
 import 'package:http/http.dart' as http;
 
 void main() {
-  final bot = NyxxFactory.createNyxxWebsocket(
-      'ODczMzY4MjQ0NDcwMzAwNzEy.YQ3Zjw.bbx3iFTNuR-w5_4RuKwZknQy_54',
+  final bot = NyxxFactory.createNyxxWebsocket('TOKEN',
       GatewayIntents.allUnprivileged)
     ..registerPlugin(Logging())
     ..registerPlugin(CliIntegration())
